@@ -1,0 +1,102 @@
+ html {
+width:100%;
+height:100%;
+}
+
+body{
+background: url('imagens/imagem_de_fundo2.jpg') ;
+background-size:cover;
+background-attachment:fixed;
+}
+
+.center-de-cadastro{
+width:750px;
+margin:200px auto;
+background-color:white;
+padding:25px;
+text-align:center;
+animation-name:fade-center;
+animation-duration:1s;
+border-radius: 50px 10px 50px 10px;
+}
+
+
+.center-header{
+padding:20px;
+border-bottom:1px solid black;
+}
+
+.center-header h1{
+text-transform:uppercase;
+}
+
+.center-body{
+padding:20px;
+
+}
+
+.center-footer{
+padding:20px;
+
+}
+
+.div-txt{
+margin-top:8px;
+}
+
+ .div-txt .link{
+text-decoration:none;
+}
+
+.div-txt button{
+background:green;
+color:white;
+font-family:Arial;
+text-transform:uppercase;
+}
+
+.div-txt button:hover{
+background:black;
+color:white;
+transition:background 1s;
+text-transform: uppercase
+
+}
+
+
+.txt-center{
+text-align:center;
+}
+
+
+
+/* Animação */
+
+@keyframes fade-center{
+from {
+    margin-top: -500px;
+}
+
+to{
+ margin-top: 200px;
+}
+}
+
+/* Respo*/
+
+@media screen and (max-width: 780px){
+
+.center-de-cadastro{
+width:450px;
+margin:200px auto;
+background-color:white;
+padding:25px;
+text-align:center;
+animation-name:fade-center;
+animation-duration:1s;
+border-radius: 50px 10px 50px 10px;
+}
+
+
+
+}

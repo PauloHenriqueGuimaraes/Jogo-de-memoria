@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jogo de memoria</title>
+
+  <script type="text/javascript" src="javass.js"></script>
+  <!-- Bootstrap -->
+  <link rel="icon" href="imagens/icon.png"/>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="estilo.css" rel="stylesheet">
+
+</head>
+<body onload="loadBody()" >
+
+<section class="center-de-cadastro">
+  <div method="post" action="">
+    <div class="center-header">
+      <div class="row">
+        
+        <div class="col-md-6 col-xs-6">
+          <span>A certos</span>
+          <input type="text" class="form-control" id="acertos">
+       </div>
+
+        <div class="col-md-6 col-xs-6">
+        <span>Erros</span>
+        <input type="text" class="form-control" id="erros">
+        </div>
+    
+
+      </div>
+    </div>
+
+    <div class="center-body">
+      <div class="div-txt">
+        <input type="text" class="form-control txt-center" placeholder="Numero Aleátorio" id="txtNumeroAleatorio">
+      </div>
+
+      <div class="div-txt">
+        <button class="form-control btn-hover" onclick="proximo()" >Proximo</button>
+      </div>
+
+      <div class="div-txt" id="textResposta">
+        
+      </div>
+    </div>
+
+    
+    <div class="center-body" id="respostaJ">
+        <span id="verificacao"></span>
+    </div>
+
+  </div>
+</section>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
